@@ -271,13 +271,8 @@ export default function CircleBackground() {
         const drawR = c.radius * c.scale;
         const alpha = globalAlpha * c.scale;
 
-        const grad = ctx.createRadialGradient(c.x, c.y, 0, c.x, c.y, drawR);
-        grad.addColorStop(0, `rgba(${cr},${cg},${cb},${(alpha * 0.8).toFixed(3)})`);
-        grad.addColorStop(0.5, `rgba(${cr},${cg},${cb},${(alpha * 0.35).toFixed(3)})`);
-        grad.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
-
         ctx.beginPath();
-        ctx.fillStyle = grad;
+        ctx.fillStyle = `rgba(${cr},${cg},${cb},${(alpha * 0.7).toFixed(3)})`;
         ctx.arc(c.x, c.y, drawR, 0, Math.PI * 2);
         ctx.fill();
       }
