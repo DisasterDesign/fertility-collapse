@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-bg text-text-primary font-sans antialiased">
+      <body className="text-text-primary font-sans antialiased" style={{ backgroundColor: '#0a0a1a' }}>
         {children}
       </body>
     </html>

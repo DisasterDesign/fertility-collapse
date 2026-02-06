@@ -10,7 +10,32 @@
   }
 
   body {
-    @apply bg-bg text-text-primary;
+    @apply text-text-primary;
+    background: transparent;
+  }
+
+  /* Section backgrounds: semi-transparent so 3D particles show through */
+  section {
+    position: relative;
+    z-index: 1;
+    background: rgba(10, 10, 26, 0.82);
+  }
+
+  section#hero {
+    background: rgba(10, 10, 26, 0.4);
+  }
+
+  section#world-map,
+  section#features {
+    background: rgba(10, 10, 26, 0.65);
+  }
+
+  section#israel {
+    background: rgba(10, 10, 26, 0.78);
+  }
+
+  section#closing {
+    background: transparent;
   }
 
   ::-webkit-scrollbar {

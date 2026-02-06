@@ -5,7 +5,7 @@ import ScrollReveal from './ScrollReveal';
 export default function Closing() {
   return (
     <section id="closing" className="py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-bg via-surface/30 to-bg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(10,10,26,0.7)] via-[rgba(18,18,42,0.3)] to-[rgba(10,10,26,0.85)]" />
 
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
