@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0a0a1a;
+    color: #E8E6E3;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply bg-bg text-text-primary;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333355;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4A90D9;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
+  .section-container {
+    @apply w-full px-4 sm:px-6 lg:px-8 mx-auto max-w-content;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-white/5 rounded-xl p-6;
+  }
+
+  .stat-number {
+    @apply font-mono text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold mb-4 tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-muted text-lg md:text-xl max-w-2xl mb-12;
   }
 }
