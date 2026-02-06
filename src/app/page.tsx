@@ -13,12 +13,12 @@ import Closing from '@/components/Closing';
 import Navigation from '@/components/Navigation';
 import Header from '@/components/Header';
 
-const Background3D = dynamic(() => import('@/components/three/Background3D'), { ssr: false });
+const CircleBackground = dynamic(() => import('@/components/CircleBackground'), { ssr: false });
 
 export default function Page() {
   return (
     <main className="relative">
-      <Background3D />
+      <CircleBackground />
       <Header />
       <Navigation />
       <Hero />
