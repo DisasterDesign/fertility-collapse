@@ -26,6 +26,20 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #4A90D9;
   }
+
+  .overflow-x-auto::-webkit-scrollbar {
+    height: 6px;
+  }
+  .overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #333355;
+    border-radius: 3px;
+  }
+  .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: #4A90D9;
+  }
+  .overflow-x-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 @layer components {

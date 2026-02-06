@@ -1,0 +1,14 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a1a"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#D4880F" opacity="0.6"/>
+  <text x="600" y="220" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="#E8E6E3">Fertility Collapse</text>
+  <text x="600" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#D4880F">as Phase Transition</text>
+  <text x="600" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#888899">A Binary Classification Model Across 62 Countries</text>
+  <line x1="400" y1="420" x2="800" y2="420" stroke="#333355" stroke-width="1"/>
+  <text x="300" y="490" text-anchor="middle" font-family="monospace" font-size="42" font-weight="700" fill="#E74C3C">62</text>
+  <text x="300" y="530" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">countries</text>
+  <text x="600" y="490" text-anchor="middle" font-family="monospace" font-size="42" font-weight="700" fill="#D4880F">79%</text>
+  <text x="600" y="530" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">accuracy</text>
+  <text x="900" y="490" text-anchor="middle" font-family="monospace" font-size="42" font-weight="700" fill="#2ECC71">1</text>
+  <text x="900" y="530" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">anomaly</text>
+</svg>

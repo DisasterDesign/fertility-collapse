@@ -13,6 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://fertility-collapse.com'),
   title: "Fertility Collapse as Phase Transition",
   description: "A Binary Classification Model Across 62 Countries — Interactive research on the global fertility collapse",
   icons: {
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
     title: "Fertility Collapse as Phase Transition",
     description: "62 countries. 79% accuracy. 1 unexplained anomaly. An interactive exploration of the global fertility collapse.",
     type: "website",
+    images: [{ url: '/og-image.svg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Fertility Collapse as Phase Transition",
+    description: "62 countries. 79% accuracy. 1 unexplained anomaly. An interactive exploration of the global fertility collapse.",
   },
 };
 

@@ -10,7 +10,7 @@ export default function Closing() {
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
-            <div className="space-y-8 text-xl md:text-2xl leading-relaxed">
+            <div className="space-y-8 text-2xl md:text-3xl leading-relaxed">
               <p className="text-muted">
                 Calhoun ran it <span className="text-text-primary font-bold">25 times.</span>
               </p>
@@ -20,12 +20,12 @@ export default function Closing() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.3}>
-            <div className="my-16 w-px h-20 bg-muted/20 mx-auto" />
+          <ScrollReveal delay={0.2}>
+            <div className="my-20 w-px h-20 bg-muted/20 mx-auto" />
           </ScrollReveal>
 
-          <ScrollReveal delay={0.5}>
-            <div className="space-y-8 text-xl md:text-2xl leading-relaxed">
+          <ScrollReveal delay={0.3}>
+            <div className="space-y-8 text-2xl md:text-3xl leading-relaxed">
               <p className="text-muted">
                 The human experiment is running <span className="text-accent font-bold">once.</span>
               </p>
@@ -33,24 +33,27 @@ export default function Closing() {
                 62 data points say we&apos;re on the <span className="text-danger font-bold">same curve.</span>
               </p>
               <p className="text-text-primary font-medium">
-                1 data point says we <span className="text-safe font-bold">might not have to be.</span>
+                1 data point says we{' '}
+                <span className="text-safe font-bold" style={{ textShadow: '0 0 20px rgba(46, 204, 113, 0.3)' }}>
+                  might not have to be.
+                </span>
               </p>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.8}>
-            <div className="my-16 w-px h-20 bg-muted/20 mx-auto" />
+          <ScrollReveal delay={0.5}>
+            <div className="my-20 w-px h-20 bg-muted/20 mx-auto" />
           </ScrollReveal>
 
-          <ScrollReveal delay={1.0}>
-            <p className="text-lg text-muted max-w-xl mx-auto">
+          <ScrollReveal delay={0.6}>
+            <p className="text-xl text-accent/80 max-w-xl mx-auto">
               We don&apos;t yet understand what makes that one different.
             </p>
           </ScrollReveal>
         </div>
 
         {/* Footer */}
-        <ScrollReveal delay={1.2}>
+        <ScrollReveal delay={0.8}>
           <footer className="mt-32 pt-16 border-t border-muted/10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
               {/* Col 1 — About */}

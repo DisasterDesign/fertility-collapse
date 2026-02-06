@@ -89,11 +89,11 @@ export default function CountryProfiles() {
           </p>
         </ScrollReveal>
 
-        <div className="overflow-x-auto pb-4 -mx-4 px-4">
-          <div className="flex gap-5 min-w-max">
-            {profiles.map((profile, i) => (
-              <ScrollReveal key={profile.name} delay={i * 0.08} direction="up">
-                <div className="glass-card w-[300px] flex-shrink-0 hover:border-accent/20 transition-colors duration-300">
+        <ScrollReveal delay={0.1}>
+          <div className="overflow-x-auto pb-4 -mx-4 px-4">
+            <div className="flex gap-5 min-w-max">
+              {profiles.map((profile) => (
+                <div key={profile.name} className="glass-card w-[300px] flex-shrink-0 hover:border-accent/20 transition-colors duration-300">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-3xl">{profile.emoji}</span>
                     <div>
@@ -121,10 +121,10 @@ export default function CountryProfiles() {
                     />
                   </div>
                 </div>
-              </ScrollReveal>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ export default function IsraelAnomaly() {
         </ScrollReveal>
 
         {/* Main stat */}
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal>
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="glass-card text-center py-8">
               <p className="text-muted text-sm mb-2">Model Prediction</p>
@@ -32,7 +32,7 @@ export default function IsraelAnomaly() {
         </ScrollReveal>
 
         {/* Sub-population table */}
-        <ScrollReveal delay={0.2}>
+        <ScrollReveal delay={0.1}>
           <div className="glass-card mb-12">
             <h3 className="text-lg font-bold mb-6">Sub-Population Breakdown</h3>
             <div className="space-y-3">
@@ -65,7 +65,7 @@ export default function IsraelAnomaly() {
         </ScrollReveal>
 
         {/* War Baby Boom */}
-        <ScrollReveal delay={0.3}>
+        <ScrollReveal delay={0.15}>
           <div className="glass-card mb-12">
             <h3 className="text-lg font-bold mb-4">2024 War Baby Boom</h3>
             <p className="text-muted text-sm mb-6">
@@ -97,7 +97,7 @@ export default function IsraelAnomaly() {
         </ScrollReveal>
 
         {/* Israel vs Ukraine */}
-        <ScrollReveal delay={0.4}>
+        <ScrollReveal delay={0.2}>
           <div className="glass-card">
             <h3 className="text-lg font-bold mb-4">Same Stimulus, Opposite Response</h3>
             <div className="grid md:grid-cols-2 gap-6">

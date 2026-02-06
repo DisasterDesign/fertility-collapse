@@ -4,8 +4,21 @@ import {
   XAxis, YAxis, CartesianGrid,
   ResponsiveContainer, ReferenceLine, Tooltip, Area, AreaChart
 } from 'recharts';
+import { motion } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 import { druzeTrajectory, druzeChecklist } from '@/data/israel';
+
+const staggerContainer = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.1 }
+  }
+};
+
+const staggerItem = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' as const } }
+};
 
 export default function DruzePuzzle() {
   return (
@@ -100,9 +113,15 @@ export default function DruzePuzzle() {
               By every mainstream theory, the Druze should have the highest fertility in Israel.
             </p>
 
-            <div className="space-y-4">
-              {druzeChecklist.map((item, i) => (
-                <ScrollReveal key={item.factor} delay={0.3 + i * 0.1}>
+            <motion.div
+              className="space-y-4"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              {druzeChecklist.map((item) => (
+                <motion.div key={item.factor} variants={staggerItem}>
                   <div className="flex items-center justify-between p-4 bg-surface/50 rounded-lg">
                     <div className="flex items-center gap-3">
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm ${
@@ -119,22 +138,22 @@ export default function DruzePuzzle() {
                       <span className="font-mono text-lg font-bold text-danger">{item.actual}</span>
                     </div>
                   </div>
-                </ScrollReveal>
+                </motion.div>
               ))}
-            </div>
 
-            {/* Result */}
-            <ScrollReveal delay={0.9}>
-              <div className="mt-6 p-5 bg-danger/10 border border-danger/20 rounded-lg flex items-start gap-3">
-                <span className="text-danger text-2xl">✕</span>
-                <div>
-                  <p className="text-danger font-bold">Result: Below replacement, shrinking 0.9% annually</p>
-                  <p className="text-muted text-sm mt-1">
-                    Population: 148,000 → declining
-                  </p>
+              {/* Result */}
+              <motion.div variants={staggerItem}>
+                <div className="mt-6 p-5 bg-danger/10 border border-danger/20 rounded-lg flex items-start gap-3">
+                  <span className="text-danger text-2xl">✕</span>
+                  <div>
+                    <p className="text-danger font-bold">Result: Below replacement, shrinking 0.9% annually</p>
+                    <p className="text-muted text-sm mt-1">
+                      Population: 148,000 → declining
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </ScrollReveal>
+              </motion.div>
+            </motion.div>
           </div>
         </ScrollReveal>
 
