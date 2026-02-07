@@ -160,7 +160,9 @@ export default function Closing() {
                     fuzionwebz.com
                   </a>
                   <a
-                    href="mailto:davidalelad@gmail.com"
+                    href="https://www.fuzionwebz.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 mt-2 px-5 py-2.5 text-sm font-medium rounded-full border border-accent/50 text-accent hover:bg-accent hover:text-bg transition-all duration-200"
                   >
                     Get in Touch
