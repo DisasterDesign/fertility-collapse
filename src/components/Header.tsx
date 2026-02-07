@@ -33,7 +33,9 @@ export default function Header() {
 
             {/* Contact Button */}
             <a
-              href="mailto:davidalelad@gmail.com"
+              href="https://www.fuzionwebz.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2 text-sm font-medium rounded-full border border-accent/50 text-accent hover:bg-accent hover:text-bg transition-all duration-200"
             >
               Contact
