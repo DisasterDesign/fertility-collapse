@@ -8,6 +8,8 @@ import CountryProfiles from '@/components/CountryProfiles';
 import DeadEnds from '@/components/DeadEnds';
 import IsraelAnomaly from '@/components/IsraelAnomaly';
 import DruzePuzzle from '@/components/DruzePuzzle';
+import UnitedStates from '@/components/UnitedStates';
+import AlreadyShrinking from '@/components/AlreadyShrinking';
 import PredictionsTable from '@/components/PredictionsTable';
 import Closing from '@/components/Closing';
 import Navigation from '@/components/Navigation';
@@ -30,6 +32,8 @@ export default function Page() {
       <DeadEnds />
       <IsraelAnomaly />
       <DruzePuzzle />
+      <UnitedStates />
+      <AlreadyShrinking />
       <PredictionsTable />
       <Closing />
     </main>

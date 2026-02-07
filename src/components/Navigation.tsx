@@ -13,6 +13,8 @@ const sections = [
   { id: 'dead-ends', label: 'Dead Ends' },
   { id: 'israel', label: 'Israel' },
   { id: 'druze', label: 'Druze' },
+  { id: 'united-states', label: 'USA' },
+  { id: 'shrinking', label: 'Shrinking' },
   { id: 'predictions', label: 'Predictions' },
   { id: 'closing', label: 'Closing' },
 ];
